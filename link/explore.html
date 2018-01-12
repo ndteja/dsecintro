@@ -1,0 +1,163 @@
+<html>
+<header>
+    <script>
+                function showBuyLink() {
+          document.getElementById("links").style.visibility = "visible";
+          document.getElementById("links1").style.visibility = "visible";
+          document.getElementById("ribbon").style.visibility = "visible";
+          document.getElementById("homebtn").style.visibility = "visible";
+
+
+        }
+        // adjust this as needed, 1 sec = 1000
+        setTimeout("showBuyLink()", 12000);
+        function reset(id)
+{
+    document.getElementById(id).style.zIndex = '0';
+}
+
+function up(id)
+{
+    document.getElementById(id).style.zIndex = '1';
+}
+
+function resetAll()
+{
+    for (var i = 1; i <= 2; i++)
+    {
+        reset('div' + i);
+    }
+}
+
+
+    </script>
+    <style>
+        #div1
+{
+position:absolute;
+left:0px;
+top:0px;
+z-index:-1;
+width:100px;
+height:100px;
+
+}
+#div2
+{
+position:absolute;
+left:0px;
+top:0px;
+z-index:-1;
+
+}
+
+.btn1{
+    position:absolute; 
+    bottom:-400px;
+    background:rgb(223, 217, 217);
+    color:#000; 
+    left:0px;
+    width:96px; 
+    height:50px; 
+    border:none; 
+    margin:0; 
+    padding:10; 
+    overflow:hidden;
+    z-index:20;
+    font-size:14px;
+}
+
+.btn1:hover{
+    background:rgb(136, 134, 134);
+}
+
+.btn2:hover{
+    background:rgb(136, 134, 134);
+}
+
+.btn2{
+    position:absolute; 
+    bottom:-350px;
+    background:rgb(223, 217, 217);
+    color:#000; 
+    left:0px;
+    width:96px; 
+    height:50px; 
+    border:none; 
+    margin:0; 
+    padding:10; 
+    overflow:hidden;
+    z-index:20;
+    font-size:14px;
+}
+
+.ribbon{
+    position:absolute;
+    background:rgb(0, 0, 0);
+    top:74.9px;
+    left:0px;
+    width:100px;
+    height:950px; 
+    visibility:hidden;    
+}
+
+.homebtn{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    visibility:hidden;
+    z-index:20;
+}
+
+#links
+{
+position:absolute;
+left:0px;
+top:200px;
+z-index:99999;
+visibility:hidden;
+}
+
+#links1
+{
+position:absolute;
+left:0px;
+top:200px;
+z-index:99999;
+visibility:hidden;
+}
+
+    </style>
+</header>
+<body>
+        <img src="https://storage.googleapis.com/dronamapsendpoint/logo/dronamaps_logo_white_small.png" style="position:fixed; top:50px; right:50px; height:150px; border:none; margin:0; padding:10; overflow:hidden; z-index:50;">
+        
+
+<style type="text/css">
+
+</style>
+
+<div id="div1" >
+        <div id="links">
+    <input class="btn2" type="button" value="back" onclick="resetAll(); up('div2');">
+    </div>
+    <iframe src="https://www.arcgis.com/apps/View/index.html?appid=0e63b4b3b80140aaad8e427a102b4523" height="1000" width="1850" >
+</iframe>
+<div id="ribbon" class="ribbon"></div>
+
+</div>
+<div id="div2" style="overflow: hidden; margin-top: -55px; margin-left: 0px; position: absolute;">
+        <div id="links1">
+
+                <input class="btn1" type="button" value="Maheshwar" onclick="resetAll(); up('div1');">
+        </div>
+    <iframe src="http://landsatexplorer.esri.com" height="1030" width="1850" >
+</iframe>
+
+
+</div>
+<a href="../index.html"> <input id="homebtn" class="homebtn" type="button" value="Home"></a>
+
+</body>
+
+</html>
