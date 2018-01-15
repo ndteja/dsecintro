@@ -1,6 +1,6 @@
 var modal = document.getElementById('simplemodal');
 var modalbtn = document.getElementById('modalbtn');
-var closebtn = document.getElementById('closebtn')
+var closebtn = document.getElementById('btn1')
 
 modalbtn.addEventListener('click', openmodal);
 closebtn.addEventListener('click', closemodal);
@@ -10,10 +10,8 @@ function openmodal(){
     modal.style.display='block';
 }
 
-function closemodal(e){
-    if(e.target == skewed){
+function closemodal(){
     modal.style.display = 'none';
-}
 }
 
 document.addEventListener('DOMContentLoaded', function(){
