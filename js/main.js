@@ -1,6 +1,7 @@
 var modal = document.getElementById('simplemodal');
 var modalbtn = document.getElementById('modalbtn');
-var closebtn = document.getElementById('btn1')
+var closebtn = document.getElementById('btn1');
+var cntnt = document.getElementById('cntnt');
 
 modalbtn.addEventListener('click', openmodal);
 closebtn.addEventListener('click', closemodal);
@@ -8,10 +9,12 @@ closebtn.addEventListener('click', closemodal);
 
 function openmodal(){
     modal.style.display='block';
+    cntnt.style.display='none';
 }
 
 function closemodal(){
     modal.style.display = 'none';
+    cntnt.style.display='block';
 }
 
 document.addEventListener('DOMContentLoaded', function(){

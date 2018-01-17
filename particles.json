@@ -23,11 +23,11 @@
             }
         },
         "size":{
-            "value":2.5,      
+            "value":2,      
             "random":true,
             "anim":{
                 "enable":false,
-                "speed":30
+                "speed":35
             }
                 },
                 "line_linked":{

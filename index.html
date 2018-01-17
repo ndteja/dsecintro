@@ -14,9 +14,12 @@
     <body>
             
         <img src="https://storage.googleapis.com/dronamapsendpoint/logo/dronamaps_logo_white_small.png" style="position:fixed; top:14%; left:48%; height:150px; border:none; margin:0; padding:10; overflow:hidden; z-index:50;">
-            <p style="position:fixed;font-size:35px; top:46%; left:10%; height:160px; border:none; margin:0; padding:10; overflow:hidden; z-index:50;">
-                DronaMaps recreates the world with centimetre level accuracy in 3D. We set out to create UAV based solutions to transform the way organisations use physical assets. Our products are deployed at the most critical government, commercial, and non-profit institutions in the country to solve problems we had not even dreamed of. 
+        <div  id="cntnt" style="position:fixed;font-size:35px; top:46%; left:0; text-align:center; border:none; margin:0; padding:10; overflow:hidden; z-index:10; display:block;">    
+        <p >
+                DronaMaps recreates the world with centimetre level accuracy in 3D. We set out to create UAV based solutions to transform the way organisations use physical assets.<br> Our products are deployed at the most critical government, commercial, and non-profit institutions in the country to solve problems we had not even dreamed of. 
             </p>
+            <button class="story" type="button">THIS IS OUR STORY</button>
+        </div>
         <header id="showcase">
                
                 <div id="particles-js" class="particles" style:"z-index:9999; top:0; left:0;">
@@ -29,16 +32,20 @@
                                         <div class="modal-content" id="modal-content">
                                             <form>
                                                 
-                                                <div class="uname"><i class="fa fa-user" aria-hidden="true" style="height:20px; width:20px; "></i><input type="text" placeholder="username" style="background:transparent; color:#fff; border:1;"></div>   
+                                                <div class="uname"><i class="fa fa-user" aria-hidden="true" style="height:20px; width:20px;"></i><input type="text" placeholder="username" style="background:transparent; color:#fff; border:1;"></div>   
                                              
                                                 <div class="pword"><i class="fa fa-key" aria-hidden="true"></i>
                                                     <input type="text" placeholder="password" style="background:transparent; color:#fff; border-bottom:1; overflow:hidden; padding:8px 0;"></div>
-                                                <input type="submit" value="submit" style="background:rgb(77, 76, 76); color:#fff; height:50px; width:250px">
+                                                
                                                 <br><br>
                                               
                                                 <div class="signup"><i class="fa fa-user-plus" aria-hidden="true"></i><input type="text" placeholder="Sign up" style="background:transparent; color:#fff; border:1;"></div>
-                                                <div class="submit"><input type="submit" value="submit" style="background:rgb(77, 76, 76); color:#fff; height:50px; width:250px"></div>
-                                                <div class="bckbtn"><input id="btn1" class="btn1" type="button" src="img/back.jpg" ></div>
+
+                                                <div class="lgin" style="bottom:0; left:0;"><input type="submit" value="submit" style="background:rgb(77, 76, 76); color:#fff; height:50px; width:150px; bottom:0;"></div>    
+                                                    <div class="submit"><input type="submit" value="signup" style="background:rgb(77, 76, 76); color:#fff; height:50px; width:150p; bottom:0;"></div>
+                                                <div class="bckbtn">
+                                                    <button id="btn1" type="button" style="background:transparent; height:40px; width:50px"><div class=class="w3-xxlarge"><i class="fa fa-chevron-left" aria-hidden="true"></i></div> </button>
+                                                    </div>
                                             </form>
                                         </div>
                                     </div>    

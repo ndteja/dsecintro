@@ -10,6 +10,7 @@ body{
     margin:opx;
     padding:0px;
     list-style:none; 
+    display:flex;
     }
     ul li{
         float:left;
@@ -77,8 +78,8 @@ top:0%;
  .toolbar{
      position:absolute;
      top:5%;
-    left:1%;
-    width:100%;
+    left:25%;
+    width: 100%;
     height:10%; 
  }
 
@@ -103,6 +104,7 @@ top:0%;
     position:absolute;
     top:100px;
     left:50px;
+    z-index:9999;
 }
 #login input[type="text"], #login
 input[type="password"]{
@@ -189,34 +191,18 @@ wrapper{
     color: #222;
 }
 
-.handle{
-    position: absolute;
-    height: 100%;
-    display: none;
-    width: 25px;
-    top: 0;
-    left:50%;
-    background-color:rgb(238, 199, 70);
-    z-index: 3;
+.story{
+    background:transparent;
+    color:#eee;
+    width:350px;
+    height:80px;
+    font-size:20px;
 }
 
-.skewed .handle{
-    top:50%;
-    transform: rotate(30deg) translatey(-50%);
-    height: 200%;
-    transform-origin: top; 
+.story:hover{
+    background:rgb(187, 187, 187);
 }
 
-.skewed .top{
-    transform:skew(-30deg);
-    margin-left:-1000px;
-    width: calc(50vw + 1000px);
-}
-
-.skewed .top .content-wrap{
-    transform: skew(30deg);
-    margin-left:1000px;
-}
 .welcome{
     top:0;
     left:50vw;
@@ -262,7 +248,7 @@ wrapper{
     height:500px;
     width:20%;
     overflow:auto;
-    background-color:rgba(0, 0, 0, 0.274);
+    background-color:rgba(82, 82, 82, 0.534);
 }
 
 .modal-content{
@@ -287,10 +273,17 @@ wrapper{
     z-index:3
 }
 
-.btn1{
+#btn1{
     position:absolute;
     top:0%;
-    left:35%;
+    left:0%;
+    border:none;
+    padding:5;
+}
+
+#btn1:hover{
+    background:rgb(206, 202, 202);
+    color:rgb(5, 5, 5);
 }
 
 bckbtn{
