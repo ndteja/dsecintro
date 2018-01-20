@@ -4,9 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Precision Agriculture</title>
+    <link rel="shortcut icon" href="https://storage.googleapis.com/dronamapsendpoint/logo/dronamaps_logo_black_small.png" />
+
+    <script>
+            var video = document.getElementById("myVideo");
+            var btn = document.getElementById("myBtn");
+            
+            function myFunction() {
+              if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+              } else {
+                video.pause();
+                btn.innerHTML = "Play";
+              }
+            }
+            </script>
+    
+    <style>
+        body{
+            overflow:scroll;
+        }
+        
+        .headingContainer{
+            position:absolute;
+            border-style:solid;
+            border-width:2px;
+            border-color:#ffff;
+            padding:5px;
+            top:40%;
+            left:27%;
+            height:150px;
+            width:700px;
+            text-align:center;
+            color:#fff;
+        }
+
+        h2{
+            position:absolute;
+            top:80%;
+            left:40%;
+            color:#fff;
+        }
+        
+        #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.data{
+    position:absolute;
+    top:110%;
+    left:10%;
+    height:90%;
+    width:80%;
+    background:transparent;
+    background:rgba(0, 0, 0, 0.377);
+    text-align:center;
+    color:rgb(255, 255, 255);
+
+}
+
+.innerData{
+    position:absolute;
+    top:18%;
+    left:18%;
+    font-size:20px;
+}
+
+.innerImpact1{
+    position:absolute;
+    top:60%;
+    left:10%;
+    font-size:20px;
+}
+
+.innerImpact2{
+    position:absolute;
+    top:60%;
+    left:45%;
+    font-size:20px;
+}
+
+.innerImpact3{
+    position:absolute;
+    top:60%;
+    left:75%;
+    font-size:20px;
+}
+
+.btmm{
+            position:absolute;
+            top:180%;
+            left:0;
+            height:200px;
+            width:100%;
+        }
+    </style>
 </head>
 <body>
+        <a href="../index.html"><input type="image" src="https://storage.googleapis.com/dronamapsendpoint/logo/dronamaps_logo_white_small.png" alt="Home" width="100px" height="100px" style="position:absolute; z-index:999;"></a>   
     
+    <video autoplay muted loop id="myVideo">
+                <source src="../img/construct.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+    <div class="headingContainer">
+            <h1><br>Solutions for Construction</h1>
+    </div>
+
+    <h2>Measure. Manage. Communicate</h2>
+
+    <div class="data">
+        <p class="innerData">The real challenge organisations face is harnessing all of this data so that it is consumable,<br>shareable, and actionable. DronaMaps provides platform solutions for construction sites to rapidly<br>and repeatedly collect and analyze comprehensive imagery of all their sites.
+            <br><br>Our customers get the combined power of an enterprise-focused workflow and powerful<br>industry-specific analytics, to help turn aerial data into actionable business insight</p>
+            <h1 style="position:absolute; top:45%; left:45%;">IMPACT</h1>
+            <div class="innerImpact1">
+                <h1>350x</h1>
+                <p>Survey Resolution</p>
+            </div>
+            <div class="innerImpact2">
+                    <h1>50x</h1>
+                    <p>Survey Speed</p>
+                </div>
+                <div class="innerImpact3">
+                        <h1>15%</h1>
+                        <p>Cost over-run reduction</p>
+                    </div>
+
+        </div>
+    <div class="btmm"></div>
 </body>
 </html>
