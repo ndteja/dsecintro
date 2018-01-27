@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Successfully Logged in</title>
+    <link rel="shortcut icon" href="https://storage.googleapis.com/dronamapsendpoint/logo/dronamaps_logo_black_small.png" />
 
     <script src="../js/main.js"></script>
 
@@ -21,10 +22,19 @@
       };
       firebase.initializeApp(config);
     </script>
+
+    <style>
+        body{
+            position:absolute;
+            top:40%;
+            left:40%;
+        }
+    </style>
 </head>
 <body>
+       
     <h1>You are now Logged in</h1>
-
-    <input type="button" onclick="deleteMe()" value="delete my account">
+    <input type="button" onclick="deleteMe()" value="delete my account" style="position:absolute; left:30%; top:200%;">
+    <a href="../index.html"><input type="button" value="Back to home page" style="position:absolute; left:30%; top:300%;"></a>
 </body>
 </html>

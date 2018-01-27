@@ -25,7 +25,8 @@ function login(){
 
     firebase.auth().onAuthStateChanged(function(user){
         if(user){
-            window.open("pages/loggedin.html");
+            window.location = "pages/loggedin.html";
+           
             console.log("user logged in"); //user is sigmed in
         } else {
            console.log("user not logged in"); //user is not signed in.
@@ -40,22 +41,15 @@ function login(){
         window.alert("Error : " + errorMessage);
         // ...
       });
+
 };
 
 function signup(){
     var signupName = document.getElementById("signupName").value;
     var signupPass = document.getElementById("signupPass").value;
 
-    firebase.auth().onAuthStateChanged(function(user){
-        if(user){
-            window.alert("account successfully created");
-            open("pages/loggedin.html");
-            console.log("account created"); //user is sigmed in
-        } else {
-           console.log("account not created"); //user is not signed in.
-        }
-    });
     
+
     firebase.auth().createUserWithEmailAndPassword(signupName, signupPass).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
@@ -64,6 +58,16 @@ function signup(){
         window.alert("Error : " + errorMessage);
         // ...
       });
+      firebase.auth().onAuthStateChanged(function(user){
+        if(user){
+            window.alert("account successfully created");
+            open("pages/loggedin.html");
+            console.log("account created"); //user is signed in
+        } else {
+           console.log("account not created"); //user is not signed in.
+        }
+    });
+    
 };
 
 function deleteMe(){
