@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="../js/main.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAxuWtjpoVdntGmD5cEXx0190UKiBoJI8Q",
+        authDomain: "dronalogin.firebaseapp.com",
+        databaseURL: "https://dronalogin.firebaseio.com",
+        projectId: "dronalogin",
+        storageBucket: "",
+        messagingSenderId: "792296695926"
+      };
+      firebase.initializeApp(config);
+    </script>
+</head>
+<body>
+    <h1>You are now Logged in</h1>
+
+    <input type="button" onclick="deleteMe()" value="delete my account">
+</body>
+</html>

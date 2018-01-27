@@ -4,9 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Mining Solutions</title>
+    <link rel="shortcut icon" href="https://storage.googleapis.com/dronamapsendpoint/logo/dronamaps_logo_black_small.png" />
+
+
+    <script>
+            var video = document.getElementById("myVideo");
+            var btn = document.getElementById("myBtn");
+            
+            function myFunction() {
+              if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+              } else {
+                video.pause();
+                btn.innerHTML = "Play";
+              }
+            }
+            </script>
+
+    <style>
+        body{
+            overflow:scroll;
+        }
+        #myVideo {
+    position: absolute;;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.headingContainer{
+            position:absolute;
+            border-style:solid;
+            border-width:2px;
+            border-color:#ffff;
+            padding:5px;
+            top:40%;
+            left:30%;
+            height:150px;
+            width:700px;
+            text-align:center;
+            color:#fff;
+        }
+
+    .info{
+        position:absolute;
+        top:68%;
+        left:30%;
+        color:#fff;
+        text-align:center;
+        font-size:20px;
+    }
+    .infobck{
+        position:absolute;
+        top:11%;
+        left:5%;
+        height:89%;
+        width:90%;
+        background:rgba(0, 0, 0, 0.479);
+    }
+
+    .btmm{
+            position:absolute;
+            top:185%;
+            left:0;
+            height:200px;
+            width:100%;
+        }
+
+        .first{
+            position:absolute;
+            top:150%;
+            left:20%;
+            font-size:20px;
+        }
+
+        .second{
+            position:absolute;
+            top:150%;
+            left:45%;
+            font-size:20px;
+        }
+
+        .third{
+            position:absolute;
+            top:150%;
+            left:70%;
+            font-size:20px;
+        }
+    </style>
 </head>
 <body>
-    
+        <video autoplay muted loop id="myVideo">
+                <source src="../img/miningedit.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+              <a href="../index.html"><input type="image" src="https://storage.googleapis.com/dronamapsendpoint/logo/dronamaps_logo_black_small.png" alt="Home" width="100px" height="100px" style="position:absolute; z-index:999;"></a>   
+        <div class="infobck">
+              <div class="headingContainer">
+                <h1><br>Solutions for Mining</h1>
+                
+        </div>
+        <div class="info"><p>Powerful aerial data collected bring cost and time-saving innovations to a variety of mining processes.<br>Professional-quality maps and 3D models empower you to instantly calculate aggregate volumes,<br>keep track of equipment locations and monitor safety environmental compliance.
+                <br><br>Map sharing over the web means you can collaborate with team mates even on-site</p>
+            </div></div>
+
+            <div class="secpg">
+                <h1 style="position:absolute; top:115%; left:48%;">Benefits</h1>
+                <div class="first">
+                    <img src="../img/map-icon.png" style="position:absolute; height:150px; width:150px;top:-280%;left:25%;">
+                    <p>Fast 3D maps and visualization</p>
+                </div>
+                <div class="second">
+                        <img src="../img/mappingicon1.png" style="position:absolute; height:200px; width:200px;top:-240%;left:5%;">
+                        <p style="text-align:center;">Advanced analytics:-<br>elevation and 3D models</p>
+                    </div>
+                    <div class="third">
+                            <img src="../img/pencilrule.png" style="position:absolute; height:150px; width:180px;top:-190%;left:9%;">
+                            <p style="text-align:center;">Fast measurements:-<br>distance, area, and volume</p>
+                        </div>
+            </div>
+
+            <div class="thirdpg">
+                <h1>Impact</h1>
+            </div>
+
+            <div class="btmm"></div>
 </body>
 </html>
