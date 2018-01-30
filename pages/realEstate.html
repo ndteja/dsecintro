@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Real Estate</title>
+    <link rel="shortcut icon" href="https://storage.googleapis.com/dronamapsendpoint/logo/dronamaps_logo_black_small.png" />
+<script>
+        
+            var video = document.getElementById("myVideo");
+            var btn = document.getElementById("myBtn");
+            
+            function myFunction() {
+              if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+              } else {
+                video.pause();
+                btn.innerHTML = "Play";
+              }
+            }
+        
+</script>
+
+<style>
+body{
+  overflow:scroll;
+}
+
+#myVideo {
+position: absolute;;
+right: 0;
+bottom: 0;
+min-width: 100%; 
+min-height: 100%;
+}
+
+.headingContainer{
+            position:absolute;
+            border-style:solid;
+            border-width:2px;
+            border-color:#ffff;
+            padding:5px;
+            top:40%;
+            left:30%;
+            height:150px;
+            width:700px;
+            text-align:center;
+            color:#fff;
+        }
+
+        .infobck{
+        position:absolute;
+        top:11%;
+        left:5%;
+        height:87%;
+        width:90%;
+        background:rgba(0, 0, 0, 0.479);
+    }
+
+    .secpg{
+      position:absolute;
+      top:105%;
+      height:100%;
+      width:100%;
+    }
+
+    .div1{
+    position:absolute;
+    top:60%;
+    left:10%;
+}
+
+.div2{
+    position:absolute;
+    top:60%;
+    left:28%;
+}
+
+.div3{
+    position:absolute;
+    top:60%;
+    left:46%;
+}
+
+.div4{
+    position:absolute;
+    top:60%;
+    left:64%;
+}
+
+.div5{
+    position:absolute;
+    top:60%;
+    left:80%;
+}
+</style>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="../img/RECut.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <a href="../index.html"><input type="image" src="https://storage.googleapis.com/dronamapsendpoint/logo/dronamaps_logo_white_small.png" alt="Home" width="100px" height="100px" style="position:absolute; z-index:999;"></a>   
+
+      <div class="infobck">
+        <div class="headingContainer">
+          <h1><br>Solutions for Real Estate</h1></div>
+  </div>
+
+  <div class="secpg">
+    <h1 style="position:absolute; top:10%; left:34%; font-size:70px; text-align:center;">What we offer(r&u<br>planning)</h1>
+    <div class="div1">
+      <img src="../img/3d.png" style="position:absolute; height:150px; width:150px;top:-110%;">
+  <h3>Indoor/Outdoor 3D</h3>
+<p><br>Generate accurate<br>3D maps using<br>proprietary<br>localisation<br>techniques</p>
+</div>
+<div class="div2">
+  <img src="../img/compmag.png" style="position:absolute; height:150px; width:150px;top:-110%;">
+  <h3>Sales Monitoring</h3>
+  <p><br>Real time listing and<br>sales platform for<br>developers, brokers,<br>and customers.</p>
+</div>
+
+
+<div class="div3">
+  <img src="../img/ruler.png" style="position:absolute; height:150px; width:150px;top:-140%;">
+<h3>Measurements</h3>
+<p><br>Measure distance,<br>area, and volume<br>isntantly.</p>
+</div>
+<div class="div4">
+    <img src="../img/gears.png" style="position:absolute; height:150px; width:190px;top:-120%; left:-30%;">
+<h3>Integration</h3>
+<p><br>Single point<br>repository of all<br>commercial and<br>residential<br>properties in 3D.</p>
+</div>
+<div class="div5">
+    <img src="../img/pmaps.png" style="position:absolute; height:150px; width:150px;top:-120%;">
+<h3>Shared Insights</h3>
+<p><br>Live area-wise<br>pricing analysis for<br>customers, brokers,<br>and developers.</p>
+</div>
+  </div>
+</body>
+</html>

@@ -4,9 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Rural & Urban development</title>
+    <link rel="shortcut icon" href="https://storage.googleapis.com/dronamapsendpoint/logo/dronamaps_logo_black_small.png" />
+<script>
+        
+            var video = document.getElementById("myVideo");
+            var btn = document.getElementById("myBtn");
+            
+            function myFunction() {
+              if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+              } else {
+                video.pause();
+                btn.innerHTML = "Play";
+              }
+            }
+        
+</script>
+
+<style>
+body{
+  overflow:scroll;
+}
+
+#myVideo {
+position: absolute;;
+right: 0;
+bottom: 0;
+min-width: 100%; 
+min-height: 100%;
+}
+
+.headingContainer{
+            position:absolute;
+            border-style:solid;
+            border-width:2px;
+            border-color:#ffff;
+            padding:5px;
+            top:20%;
+            left:30%;
+            height:150px;
+            width:700px;
+            text-align:center;
+            color:#fff;
+        }
+
+        .infobck{
+        position:absolute;
+        top:11%;
+        left:5%;
+        height:87%;
+        width:90%;
+        background:rgba(0, 0, 0, 0.479);
+    }
+
+    .secpg{
+      position:absolute;
+      top:105%;
+      height:100%;
+      width:100%;
+    }
+
+    .div1{
+    position:absolute;
+    top:60%;
+    left:10%;
+}
+
+.div2{
+    position:absolute;
+    top:60%;
+    left:28%;
+}
+
+.div3{
+    position:absolute;
+    top:60%;
+    left:46%;
+}
+
+.div4{
+    position:absolute;
+    top:60%;
+    left:64%;
+}
+
+.div5{
+    position:absolute;
+    top:60%;
+    left:80%;
+}
+</style>
 </head>
 <body>
-    
+    <video autoplay muted loop id="myVideo">
+        <source src="../img/rudevcut.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <a href="../index.html"><input type="image" src="https://storage.googleapis.com/dronamapsendpoint/logo/dronamaps_logo_white_small.png" alt="Home" width="100px" height="100px" style="position:absolute; z-index:999;"></a>   
+
+      <div class="infobck">
+        <div class="headingContainer">
+          <h1><br>Solutions for Rural and Urban Development</h1></div>
+
+          <p style="position:absolute; top:40%; left:36%; color:#fff; font-size:40px">Deeper insights. Better Planning</p>
+          <p style="position:absolute; text-align:center; color:#fff; top:70%; left:23%; font-size:20px;">DronaMaps offers 3D maps and analysis on customised planning projects. The design and implementation of large<br>infrastructure projects requires extensive data collection, land surveys, detailed mapping, as well as regular inspections.<br>The use of our platform ensures lower operational costs, efficient planning, shareable insights and smooth<br>implementation of projects.</p>
+  </div>
+
+  <div class="secpg">
+    <h1 style="position:absolute; top:10%; left:34%; font-size:70px; text-align:center;">What we offer(r&u<br>planning)</h1>
+    <div class="div1">
+      <img src="../img/survey.png" style="position:absolute; height:150px; width:150px;top:-140%;">
+  <h3>accurate Surveys</h3>
+<p><br>Generate accurate<br>contour maps using<br>ground control</p>
+</div>
+<div class="div2">
+  <img src="../img/compmag.png" style="position:absolute; height:150px; width:150px;top:-90%;">
+  <h3>Monitoring and<br>updates</h3>
+  <p><br>Track changes over<br>time.<br>Live updates to the<br>platform post<br>deployments.</p>
+</div>
+
+<div class="div3">
+      <img src="../img/gears.png" style="position:absolute; height:150px; width:190px;top:-120%; left:-30%;">
+  <h3>Integration</h3>
+  <p><br>Single dashboard for<br>projects and<br>stakeholders involved<br>in the entire process.</p>
+</div>
+<div class="div4">
+      <img src="../img/pmaps.png" style="position:absolute; height:150px; width:150px;top:-120%;">
+  <h3>Shared Insights</h3>
+  <p><br>Share maps to<br>update stakeholders<br>and align teams.</p>
+</div>
+<div class="div5">
+  <img src="../img/maggraph.png" style="position:absolute; height:150px; width:150px;top:-70%;">
+<h3>Resource<br>Optimisation</h3>
+<p><br>DronaMaps utilises<br>machine vision and<br>machine learning<br>techniques to guide<br>resource utilisation<br>in line with<br>development plans.  </p>
+</div>
+  </div>
 </body>
 </html>
