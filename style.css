@@ -5,17 +5,29 @@ body{
     height:100%;
     width:100%;
 }
+
+.navbar{
+    margin-right: auto;    
+    margin-left: auto;    
+    width: 70%;    
+    max-width: 100%;    
+    min-width: 1000px;  
+    left:0;
+    position:absolute;
+    top:5%;
+
+}
  
     ul{
-    margin:opx;
+    margin:0 auto;
     padding:0px;
     list-style:none; 
     display:flex;
     
     }
     ul li{
-        float:left;   
-        width:200px;
+
+        width:100%;
         height:40px;
         background-color: black;
         opacity:0.8;
@@ -23,7 +35,6 @@ body{
         text-align:center;
         font-size:20px;
         margin-right:2px;
-        overflow:visible;
     }
     ul li a{
         text-decoration:none;
