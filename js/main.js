@@ -23,19 +23,10 @@ function closemodal(){
 }
 
 function login(){
+    const auth = firebase.auth();
     var userName = document.getElementById("username").value;
     var password = document.getElementById("password").value;
 
-    firebase.auth().onAuthStateChanged(function(user){
-        if(user){
-            window.location = "pages/loggedin.html";
-           
-            console.log("user logged in"); //user is sigmed in
-        } else {
-           console.log("user not logged in"); //user is not signed in.
-        }
-    });
-    
     firebase.auth().signInWithEmailAndPassword(userName, password).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
@@ -44,6 +35,17 @@ function login(){
         window.alert("Error : " + errorMessage);
         // ...
       });
+    
+    firebase.auth().onAuthStateChanged(function(userName){
+        if(userName == auth/userName){         
+            console.log("user logged in"); //user is sigmed in
+            window.location = "pages/loggedin.html";
+        } else {
+           console.log("user not logged in"); //user is not signed in.
+        }
+    });
+    
+
 
 };
 
@@ -61,8 +63,9 @@ function signup(){
         window.alert("Error : " + errorMessage);
         // ...
       });
-      firebase.auth().onAuthStateChanged(function(user){
-        if(user){
+
+      firebase.auth().onAuthStateChanged(function(userName){
+        if(userName){
             window.alert("account successfully created");
             open("pages/loggedin.html");
             console.log("account created"); //user is signed in
@@ -71,7 +74,6 @@ function signup(){
             console.log("account not created"); //user is not signed in.
         }
     });
-    
 };
 
 function deleteMe(){
