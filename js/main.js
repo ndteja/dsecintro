@@ -4,6 +4,7 @@ var modal = document.getElementById('simplemodal');
 var modalbtn = document.getElementById('modalbtn');
 var closebtn = document.getElementById('btn1');
 var cntnt = document.getElementById('cntnt');
+var logo = document.getElementById('logo');
 
 modalbtn.addEventListener('click', openmodal);
 closebtn.addEventListener('click', closemodal);
@@ -12,11 +13,13 @@ closebtn.addEventListener('click', closemodal);
 function openmodal(){
     modal.style.display='block';
     cntnt.style.display='none';
+    logo.style.display='none';
 }
 
 function closemodal(){
     modal.style.display = 'none';
     cntnt.style.display='block';
+    logo.style.display='block';
 }
 
 function login(){

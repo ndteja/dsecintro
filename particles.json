@@ -2,7 +2,7 @@
 
 "particles":{
     "number":{
-        "value":100
+        "value":200
     },
     "color":{
         "value":"#fff"
@@ -23,7 +23,7 @@
             }
         },
         "size":{
-            "value":2,      
+            "value":1,      
             "random":true,
             "anim":{
                 "enable":false,

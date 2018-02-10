@@ -256,7 +256,7 @@ wrapper{
     display: none;
     position:fixed;
     z-index: 9999;
-    top:30%;
+    top:20%;
     left:40%;
     height:500px;
     width:20%;
@@ -264,14 +264,14 @@ wrapper{
     background-color:rgba(17, 17, 17, 0.664);
 }
 
-.modal-content{
+/*.modal-content{
     background-color:transparent;
     margin: 20% auto;
     padding:20px;
     width:70%;
     top:70%;
     z-index:9999;
-}
+}*/
 
 .closebtn{
     color:rgb(255, 255, 255);

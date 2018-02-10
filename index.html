@@ -28,8 +28,8 @@
 
     </head>
     <body>
-            
-        <img src="https://storage.googleapis.com/dronamapsendpoint/logo/dronamaps_logo_white_small.png" style="position:fixed; top:15%; left:47%; height:150px; border:none; margin:0; padding:10; overflow:hidden; z-index:50;">
+        
+        <div id="logo" style="display:block"><img src="https://storage.googleapis.com/dronamapsendpoint/logo/dronamaps_logo_white_small.png" style="position:fixed; top:15%; left:47%; height:150px; border:none; margin:0; padding:10; overflow:hidden; z-index:50;"></div>
         <div  id="cntnt" style="position:fixed;font-size:30px; top:45%; left:0; text-align:center; border:none; margin:0; padding:10; overflow:hidden; z-index:10; display:block;">    
         <p >
                 DronaMaps recreates the world with centimetre level accuracy in 3D. We set out to create UAV based solutions to transform the way organisations use physical assets.<br> Our products are deployed at the most critical government, commercial, and non-profit institutions in the country to solve problems we had not even dreamed of. 
@@ -48,7 +48,7 @@
                                         <div class="modal-content" id="modal-content">
                                             <form>
                                                 
-                                                <div class="uname"><i class="fa fa-user" aria-hidden="true" style="height:20px; width:20px;"></i><input type="text" placeholder="username" id="username" style="background:transparent; color:#fff; border:1;"></div>   
+                                                <div class="uname"style:"positon:absolute;width:100%;"><i class="fa fa-user" aria-hidden="true" style="position:bsolute; height:20px; width:20px;left:0; top:10%;"></i><input type="text" placeholder="username" id="username" style="background:transparent; position:absolute; left:25%;; color:#fff; border:1;"></div>   
                                              
                                                 <div class="pword"><i class="fa fa-key" aria-hidden="true"></i>
                                                     <input type="password" placeholder="password" id="password" style="background:transparent; color:#fff; border-bottom:1; overflow:hidden; padding:8px 0;"></div>
@@ -62,10 +62,10 @@
                                                                 <div><i class="fa fa-key" aria-hidden="true"></i><input type="password" id="signupPass" placeholder="password" style="background:transparent; color:#fff; border:1;">
                                                                 </div>
                                                                     <input type="button" onclick="signup()" value="sign up" style="position:absolute; background:rgb(77, 76, 76); color:#fff; height:50px; width:150px; top:110%;right:7%;"></div>
-                                                <div class="bckbtn">
+                                                
                                                             </div>
-                                                        
-                                                    <button id="btn1" type="button" style="background:transparent; height:40px; width:50px"><div class=class="w3-xxlarge" style="color:rgb(58, 177, 84);"><i class="fa fa-chevron-left" aria-hidden="true"></i></div> </button>
+                                                            <div class="bckbtn">    
+                                                    <button id="btn1" type="button" style="background:transparent; height:40px; width:40px"><div class=class="w3-xxlarge" style="color:rgb(58, 177, 84);"><i class="fa fa-chevron-left" aria-hidden="true"></i></div> </button>
                                                     </div>
                                             </form>
                                         </div>
@@ -89,8 +89,8 @@
                                         </li>
                                         <li><a href="pages/contactUs.html">Contact</a>
                                          
-                                        <li><a href="link/explore.html">Explore</a>
-                                        <ul><li><a >sample 3D map</a></li></ul></li>
+                                        <li><a>Explore</a>
+                                        <ul><li><a href="pages/sampl3d.html">sample 3D map</a></li></ul></li>
                                         <li><a href="pages/drones.html">Buy Drones</a></li>
                                         <li><a id="modalbtn">login</a></li>
                                     </li>
