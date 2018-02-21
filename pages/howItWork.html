@@ -67,16 +67,50 @@
 
         .btmm{
             position:absolute;
-            top:280%;
+            top:300%;
             left:0;
             height:200px;
             width:100%;
         }
+
+            .dropbtn {
+
+color: white;
+padding: 0px;
+font-size: 16px;
+border: none;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
     </style>
 </head>
 <body>
-    <a href="../index.html"><input type="image" src="https://storage.googleapis.com/dronamapsendpoint/logo/dronamaps_logo_black_small.png" alt="Home" width="100px" height="100px"></a>
-    
+        
     <h1>How Does it Work</h1>
     
     <img src="../img/dronesil.png" style="position:absolute; top:40%;left:44%; height:150px; width:150px">
@@ -91,6 +125,14 @@
     <h2 class="dataLifeHead">Bringing data to life- Visualisation</h2>
     <p class="dataLife">Maps are visuals that make territories graspable. Our maps integrated<br>with applications built on top of the Olly platform allow users to<br>experience, analyse, and visualise spaces within their context</p>
 
+    <div class="dropdown">
+            <a href="../index.html"><input type="image" class="dropbtn" id="logo" src="https://storage.googleapis.com/dronamapsendpoint/logo/dronamaps_logo_black_small.png" alt="Home" width="100px" height="100px"></a>
+            <div class="dropdown-content">
+              <a href="../index.html">Home</a>
+              <a href="whatWeDo.html">What we do</a>
+              <a href="aboutUs.html">about us</a>
+            </div>
+    
     <div class="btmm"></div>
 </body>
 </html>
